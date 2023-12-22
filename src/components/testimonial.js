@@ -1,15 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/package.json";
-import SwiperCore  from "swiper";
+import SwiperCore from "swiper";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
-import pic1 from "../assests/Ellipse 18.png";
-import pic2 from "../assests/Ellipse 19.png";
+import pic1 from "../assests/testimonial-profile-1.png";
+import pic2 from "../assests/testimonial-profile-2.png";
 import arrow from "../assests/arrow.svg";
-import '../../node_modules/swiper/swiper-bundle.css';
-
-
+import "../../node_modules/swiper/swiper-bundle.css";
+import Pagination from "../../node_modules/swiper/modules/pagination.min.mjs";
+SwiperCore.use([Pagination]);
 const Testimonial = () => {
   const breakpoints = {
     320: {
@@ -21,7 +21,6 @@ const Testimonial = () => {
       spaceBetween: 10,
     },
   };
-
 
   return (
     <section id="testimonials" className="testimonials">
@@ -51,18 +50,21 @@ const Testimonial = () => {
               loop={true}
               centeredSlides={true}
               autoplay={{ delay: 5000, disableOnInteraction: false }}
-              pagination= {{ el:'.swiper-pagination',type:'bullets',clickable: true}}
+              pagination={{
+                el: ".swiper-pagination",
+                type: "bullets",
+                clickable: true,
+              }}
               breakpoints={breakpoints}
             >
               {Array.from({ length: 5 }).map((_, index) => (
-                <SwiperSlide key={index} className={`swiper-slide`}
-                 >
+                <SwiperSlide key={index} className={`swiper-slide`}>
                   <div className="testimonial-item">
                     <div className="profile mt-auto">
                       <img
                         src={index % 2 === 0 ? pic1 : pic2}
                         className="testimonial-img"
-                        alt=""
+                        alt="profile-photo"
                       />
                       <h3>
                         {index % 2 === 0 ? "Sara Wilsson" : "John Larson"}
@@ -76,15 +78,14 @@ const Testimonial = () => {
                       </div>
                     </div>
                     <div className="testimonial-content">
-                      
-                        <p>
-                          {index % 2 === 0
-                            ? "Export tempor illum tamen noster fugiat irure amet legam anim culpa."
-                            : "Quis quorumm nulla illum cillum fugiat legam esse veniam Quis quorumm nulla illum cillum fugiat legam esse veniam Quis quorumm nulla illum cillum fugiat legam esse veniam Quis quorumm nulla illum cillum fugiat legam esse veniam Quis quorumm nulla illum cillum fugiat legam esse veniam ."}
-                        </p>
+                      <p>
+                        {index % 2 === 0
+                          ? "Export tempor illum tamen noster fugiat irure amet legam anim culpa."
+                          : "Quis quorumm nulla illum cillum fugiat legam esse veniam Quis quorumm nulla illum cillum fugiat legam esse veniam Quis quorumm nulla illum cillum fugiat legam esse veniam Quis quorumm nulla illum cillum fugiat legam esse veniam Quis quorumm nulla illum cillum fugiat legam esse veniam ."}
+                      </p>
                     </div>
                     <div className="arrow-img">
-                      <img src={arrow} className="text-end" alt="" />
+                      <img src={arrow} className="text-end" alt="arrowImg" />
                     </div>
                   </div>
                 </SwiperSlide>

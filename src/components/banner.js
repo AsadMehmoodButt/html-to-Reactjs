@@ -7,7 +7,7 @@ import { faStar } from "@fortawesome/free-solid-svg-icons";
 const Banner = () => {
   return (
     <section id="home" className="banner-wrapper">
-      <img src={subtraction2} className="pattern" alt="" />
+      <img src={subtraction2} className="pattern" alt="subtractionImgage" />
       <div className="container banner-content">
         <div className="row align-items-center flex-sm-column flex-md-row flex-lg-row content-row">
           <div className="col-md-12 col-lg-5 my-5 mt-md-5 my-md-0 text-center ">
@@ -26,13 +26,13 @@ const Banner = () => {
                 <FontAwesomeIcon icon={faStar} />
                 <FontAwesomeIcon icon={faStar} />
                 <FontAwesomeIcon icon={faStar} />
-                <FontAwesomeIcon icon={faStar} />
+                <FontAwesomeIcon icon={faStar} className="me-2"/>
                 Rate 5 stars by independent users
               </a>
             </div>
           </div>
           <div className="col-xl-1 col-lg-2 col-md-3 mt-md-5 header-img-section">
-            <img src={arrow} className="arrow" alt="" />
+            <img src={arrow} className="arrow" alt="arrow" />
           </div>
           <div className="col-xl-5 col-lg-4 col-md-7 mt-md-5 offset-md-0 me-md-5  header-img-section">
             <div className="position-relative">

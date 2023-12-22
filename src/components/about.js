@@ -31,9 +31,9 @@ const About = () => {
                 Morbi in est et tortor vulputate efficitur non placerat metus.
                 Suspendisse lacinia, lacus non vestibulum porta, nisl eros
                 egestas lorem, eget finibus magna arcu at odio. Etiam a blandit
-                neque.
-                Morbi in est et tortor vulputate efficitur non placerat metus.
-                Suspendisse lacinia, lacus non vestibulum porta, nisl eros
+                neque. Morbi in est et tortor vulputate efficitur non placerat
+                metus. Suspendisse lacinia, lacus non vestibulum porta, nisl
+                eros
               </p>
               <button className="btn btn-warning btn-contact">
                 Contact with Experts

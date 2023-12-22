@@ -9,7 +9,7 @@ const PriceSection = () => {
           className="container-fluid price-container"
           style={{ position: "relative" }}
         >
-          <img src={subtraction2} className="background-image" alt="" />
+          <img src={subtraction2} className="background-image" alt="subtractionImg" />
 
           <div className="row">
             <div className="price-content">
@@ -59,7 +59,7 @@ const PriceSection = () => {
                 <div className="price2">
                   <div className="card p-4">
                     <div className="card-body  text-center">
-                      <img src={logo} width="200px" alt="" />
+                      <img src={logo} width="200px" alt="AssetLogo" />
                       <p>
                         Smartphone Compatible <br /> (No Extra Charges)
                       </p>

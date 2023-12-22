@@ -9,23 +9,23 @@ const Footer = () => {
   return (
     <footer id="footer">
       <div className="container footer">
-        <img src={logo} className="mt-3 footer-logo" alt="" />
+        <img src={logo} className="mt-3 footer-logo" alt="footerLogo" />
         <p className="mt-5">© 2023 All Rights Reserved AssetRack</p>
         <div className="social-links">
-          <a href="#" className="twitter">
-            <img src={icon1} alt="" />
-          </a>
           <a href="#" className="facebook">
-            <img src={icon2} />
+            <img src={icon1} alt="facebookIcon" />
           </a>
-          <a href="#" className="instagram">
-            <img src={icon3} alt="" />
-          </a>
-          <a href="#" className="google-plus">
-            <img src={icon4} />
+          <a href="#" className="twitter">
+            <img src={icon2} alt="twitterIcon"/>
           </a>
           <a href="#" className="linkedin">
-            <img src={icon5} />
+            <img src={icon3} alt="linkedinIcon" />
+          </a>
+          <a href="#" className="google-plus">
+            <img src={icon4} alt="googleplusIcon" />
+          </a>
+          <a href="#" className="pinterest">
+            <img src={icon5} alt="pinterestIcon" />
           </a>
         </div>
       </div>

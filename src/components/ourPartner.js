@@ -5,15 +5,14 @@ import pic1 from "../assests/brands-waste.png";
 import pic2 from "../assests/brands-megmeet.png";
 import pic3 from "../assests/brands-LG.png";
 import pic4 from "../assests/brands-chimei.png";
-import pic5 from "../assests/Component 26 – 1.png";
+import pic5 from "../assests/amazonLogo.png";
 import pic6 from "../assests/Subtraction 3.svg";
-import 'swiper/swiper-bundle.css';
-import Autoplay from '../../node_modules/swiper/modules/autoplay.mjs';
+import "swiper/swiper-bundle.css";
+import Autoplay from "../../node_modules/swiper/modules/autoplay.mjs";
 import "swiper/css/autoplay";
 SwiperCore.use([Autoplay]);
 
 const OurPartner = () => {
-
   const breakpoints = {
     567: {
       slidesPerView: 1,
@@ -31,7 +30,7 @@ const OurPartner = () => {
   return (
     <div className="our-partner-slider mt-5">
       <div className="patternimg">
-        <img src={pic6} className="subtraction3" alt="" />
+        <img src={pic6} className="subtraction3" alt="subtractionImg" />
       </div>
       <div className="container text-center swiper our-partner text-lg-start ">
         <p className="mt-5 text-muted text-size ms-4">Who endorse our work</p>
@@ -51,19 +50,19 @@ const OurPartner = () => {
               }}
             >
               <SwiperSlide className="top">
-                <img src={pic1} alt="Partner Logo" />
+                <img src={pic1} alt="brands-waste-logo" />
               </SwiperSlide>
               <SwiperSlide className="top">
-                <img src={pic2} alt="Partner Logo" />
+                <img src={pic2} alt="brands-megmeet-logo" />
               </SwiperSlide>
               <SwiperSlide className="top">
-                <img src={pic3} alt="Partner Logo" />
+                <img src={pic3} alt="brands-LG-logo" />
               </SwiperSlide>
               <SwiperSlide className="top">
-                <img src={pic4} alt="Partner Logo" />
+                <img src={pic4} alt="brands-chimei-logo" />
               </SwiperSlide>
               <SwiperSlide className="top">
-                <img src={pic5} alt="Partner Logo" />
+                <img src={pic5} alt="amazon-logo" />
               </SwiperSlide>
             </Swiper>
           </div>

@@ -21,7 +21,7 @@ const Benefits = () => {
                     autoplay
                   ></dotlottie-player>
 
-                  {benefit.image && <img src={benefit.image} alt="" />}
+                  {benefit.image && <img src={benefit.image} alt={benefit.title} />}
                   <h3>{benefit.title}</h3>
                   <p className="fst-italic">{benefit.description}</p>
                 </div>
