@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 37">
+  <g id="Group_2567" data-name="Group 2567" transform="translate(-375 -7500)">
+    <g id="Rounded_Rectangle_1" data-name="Rounded Rectangle 1" transform="translate(375 7500)" fill="none" stroke="#fff" stroke-width="1">
+      <rect width="37" height="37" rx="18.5" stroke="none"/>
+      <rect x="0.5" y="0.5" width="36" height="36" rx="18" fill="none"/>
+    </g>
+    <path id="Forma_1" data-name="Forma 1" d="M1182.915,5395.621v2.568H1181v3.14s1.433-2.333,1.911,0,0,9.332,0,9.332h3.926v-9.332h2.634s.247-1.506.366-3.152h-2.986v-2.147a.921.921,0,0,1,.851-.753h2.139v-3.269h-2.908C1182.818,5392.009,1182.915,5395.152,1182.915,5395.621Z" transform="translate(-792.248 2117.823)" fill="#fff"/>
+  </g>
+</svg>
